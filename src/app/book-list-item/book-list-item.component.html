@@ -1,13 +1,13 @@
 <!--BS--><ng-container *ngIf="book"><!--BE-->
   <img *ngIf="book.thumbnailUrl" [src]="book.thumbnailUrl" alt="Cover">
-  <div class="overview">
-    <h2>{{ book.title }}</h2>
-    <h3 *ngIf="book.subtitle">{{ book.subtitle }}</h3>
-    <div class="authors">
-      <ng-container *ngFor="let author of book.authors; last as l">
-        {{ author }}<ng-container *ngIf="!l">, </ng-container>
-      </ng-container>
-    </div>
-    <div>ISBN {{ book.isbn }}</div>
-  </div>
+  <h2>{{ book.title }}</h2>
+  <p role="doc-subtitle" *ngIf="book.subtitle">
+    {{ book.subtitle }}
+  </p>
+  <ul class="comma-list">
+    <li *ngFor="let author of book.authors">
+      {{ author }}
+    </li>
+  </ul>
+  <div>ISBN {{ book.isbn }}</div>
 <!--BS--></ng-container><!--BE-->
