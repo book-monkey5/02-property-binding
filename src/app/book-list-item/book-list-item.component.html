@@ -1,4 +1,4 @@
-<!--BS--><ng-container *ngIf="book"><!--BE-->
+<ng-container *ngIf="book">
   <img *ngIf="book.thumbnailUrl" [src]="book.thumbnailUrl" alt="Cover">
   <h2>{{ book.title }}</h2>
   <p role="doc-subtitle" *ngIf="book.subtitle">
@@ -10,4 +10,4 @@
     </li>
   </ul>
   <div>ISBN {{ book.isbn }}</div>
-<!--BS--></ng-container><!--BE-->
+</ng-container>

@@ -1,5 +1,5 @@
-import { Component/*BS*/, Input/*BE*/ } from '@angular/core';
-/*BS*/import { Book } from '../shared/book';/*BE*/
+import { Component, Input } from '@angular/core';
+import { Book } from '../shared/book';
 
 @Component({
   selector: 'bm-book-list-item',
@@ -7,5 +7,5 @@ import { Component/*BS*/, Input/*BE*/ } from '@angular/core';
   styleUrls: ['./book-list-item.component.css']
 })
 export class BookListItemComponent {
-  /*BS*/@Input() book?: Book;/*BE*/
+  @Input() book?: Book;
 }
