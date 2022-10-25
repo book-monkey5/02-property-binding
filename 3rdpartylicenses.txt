@@ -10,6 +10,9 @@ MIT
 @angular/router
 MIT
 
+book-monkey5-styles
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
