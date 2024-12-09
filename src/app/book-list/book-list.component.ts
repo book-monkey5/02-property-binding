@@ -5,7 +5,8 @@ import { Book } from '../shared/book';
 @Component({
   selector: 'bm-book-list',
   templateUrl: './book-list.component.html',
-  styleUrls: ['./book-list.component.css']
+  standalone: false,
+  styleUrl: './book-list.component.css'
 })
 export class BookListComponent {
   books: Book[] = [];
